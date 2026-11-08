@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will be a normal day!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="floating-decor">⭐ 🌈 🎈 ✨ 🌸 🎀</div>
+
+    <header>
+        <div class="logo">♡ ПРИЕМНЫЙ DAY ♡</div>
+        <button id="musicBtn" onclick="toggleMusic()">
+            🎵 Play Music
+        </button>
+    </header>
+
+    <audio id="birthdayMusic" loop>
+        <source src="music/birthday.mp3" type="audio/mpeg">
+    </audio>
+
+    <main>
+
+        <!-- WELCOME SECTION -->
+        <section class="hero">
+            <div class="sticker">🎀</div>
+            <p class="small-title">TODAY IS NOTHING SPECIAL DAY!</p>
+
+            <h1>
+                NORMAL<br>
+                <span>DAY!</span>
+            </h1>
+
+            <div class="birthday-cake">🎂</div>
+
+            <p class="hero-text">
+                To my favorite human in УМД! 💖
+                <br>
+                Today is ПРИЕМНЫЙ DAY OMG!
+            </p>
+
+            <button class="main-btn"
+                    onclick="celebrate()">
+                NOTHING TO CELEBRATE! 🎉
+            </button>
+
+            <div class="scroll-hint">
+                ↓ SCROLL TO EXPLORE ↓
+            </div>
+        </section>
+
+
+        <!-- MEMORY GALLERY -->
+        <section class="memories" id="memories">
+
+            <p class="small-title">LITTLE MOMENTS, BIG MEMORIES</p>
+
+            <h2>Our Happy Memories 📸</h2>
+
+            <p class="section-desc">
+                Every picture tells a little story hahaha
+            </p>
+
+            <div class="gallery">
+
+                <div class="photo-card rotate-left">
+                    <img src="images/photo1.jpg"
+                         alt="YOU">
+                    <p>YOU💗</p>
+                </div>
+
+                <div class="photo-card rotate-right">
+                    <img src="images/photo2.jpg"
+                         alt="Pretty">
+                    <p>PRETTY😂</p>
+                </div>
+
+                <div class="photo-card rotate-left">
+                    <img src="images/photo3.jpg"
+                         alt="US (its us not US)">
+                    <p>US (It's us not US🌷</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- SECRET LETTER -->
+        <section class="letter-section">
+
+            <p class="small-title">A LITTLE SOMETHING FOR YOU</p>
+
+            <h2>You Have a Secret Letter! 💌</h2>
+
+            <p class="section-desc">
+                Someone has something special to tell you...
+            </p>
+
+            <div class="envelope" id="envelope"
+                 onclick="openLetter()">
+
+                <div class="envelope-icon">💌</div>
+
+                <p>CLICK TO OPEN</p>
+            </div>
+
+            <div class="letter-content hidden" id="letter">
+                <h3>Dear you, 💕</h3>
+
+                <p>
+                    Nothing new. 
+                    Thank you for your time!
+                </p>
+
+                <h3>Love me always! 💗</h3>
+                <div class="signature">♡</div>
+            </div>
+
+        </section>
+
+
+        <!-- FINAL CELEBRATION -->
+        <section class="final-section">
+
+            <div class="stars">✨ ⭐ ✨</div>
+
+            <h2>Make a Wish! 🌟</h2>
+
+            <p>
+                Close your eyes, make a wish
+                and let the magic happen on a normal day!
+            </p>
+
+            <button class="main-btn"
+                    onclick="fireworks()">
+                MAKE A WISH! 🎆
+            </button>
+
+            <h1 class="final-text">
+                💖
+            </h1>
+
+        </section>
+
+    </main>
+
+    <canvas id="fireworksCanvas"></canvas>
+
+    <footer>
+        Made with ♡ just for you.
+        <br>
+        OKAY?
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
